@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/cesarrodas/Angular-Boiler-Plate#readme",
   "devDependencies": {
+    "angular": "^1.5.8",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-2": "^6.13.0",
     "webpack": "^2.1.0-beta.25",
     "webpack-dev-server": "^1.16.1"
   }
