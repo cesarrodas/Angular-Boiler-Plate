@@ -1,5 +1,11 @@
-module.exports = function(ngModule) {
-	ngModule.directive('kcdHello', function(){
+export default ngModule => {
+
+	if (ON_TEST) {
+		require('./kcd-hello.test').default(ngModule);
+	}
+
+	ngModule.directive('kcdHello', ['$log', function($log) {
+		require('./kcd-hello.css');
 		return {
 			restrict: 'E',
 			scope: {},
@@ -11,5 +17,5 @@ module.exports = function(ngModule) {
 				vm.greeting = "Hello Webpack";
 			}
 		};
-	});
+	}]);
 };
